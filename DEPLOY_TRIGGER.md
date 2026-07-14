@@ -1,0 +1,1 @@
+Redeploy trigger — syncing latest game_code thumbnails (pp/jili/pg/jdb) to live Worker static assets bundle. Triggered 2026-07-14.
