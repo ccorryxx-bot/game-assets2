@@ -1,5 +1,7 @@
 name = "game-assets2"
+main = "src/index.js"
 compatibility_date = "2025-01-01"
 
-[assets]
-directory = "./"
+[[r2_buckets]]
+binding = "GAME_ASSETS"
+bucket_name = "game-assets2"
