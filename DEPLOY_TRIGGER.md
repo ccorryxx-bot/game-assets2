@@ -1,4 +1,18 @@
-# Deploy notes
+# Deploy notes — SUPERSEDED
+
+Everything below this line was written 2026-09-09 and described the R2
+migration as reverted/on-hold. **That's no longer true as of 2026-09-10** —
+the R2 migration is live in production. This file caused real confusion
+because it was left un-updated after the situation changed; don't repeat
+that — update `README.md`'s **History** section instead of a separate notes
+file next time, so there's exactly one place to check.
+
+Current, accurate architecture + history: see `README.md` in this repo.
+
+---
+
+*(old content intentionally left below for archival/audit trail only — do
+not treat anything past this point as current)*
 
 **2026-09-09 — Reverted to static-assets. R2 migration is ON HOLD, not live.**
 
@@ -18,13 +32,11 @@ wrangler deploy
 (No CI is connected to this repo — pushing to GitHub alone does NOT deploy anything.
 Someone must run `wrangler deploy` manually.)
 
----
-
 ### About the abandoned R2 attempt (2026-09-05 → 09-07)
 
 An earlier attempt to migrate thumbnail serving to R2 (`src/index.js`, bucket
-`game-assets2`) is still in this repo's git history but was **never actually
-deployed** — the commits deliberately renamed the worker to `game-assets2-r2`
+`game-assets2`) is still in this repo's git history but was never actually
+deployed — the commits deliberately renamed the worker to `game-assets2-r2`
 specifically to avoid touching production, and that worker was never created.
 The R2 bucket itself still exists in the Cloudflare account but is empty/unused.
 
